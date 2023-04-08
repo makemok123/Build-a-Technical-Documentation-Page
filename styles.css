@@ -6,19 +6,23 @@ body{
 
 .table-of-contents{
     padding-bottom: 1em;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 3em;
-    align-content:start;
+    font-size: 50px;
+    display: flex;
+    height: 250px;
+    flex-direction: column;   
+    position: sticky;
+    overflow: auto;   
 }
 
-.Main-Heading{
-    font-size: 2.5em;
+h1{
+    font-size: 4rem;
+    text-align: center;
 }
 
 .Heading{
-  font-size: 1.5em;
-  border:1px solid black;    
+  font-size: 2rem;
+  border: 1px solid black;
+
 }
 
 .JS-Heading{
