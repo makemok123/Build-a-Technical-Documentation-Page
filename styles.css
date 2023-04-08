@@ -6,9 +6,8 @@ body{
 
 .table-of-contents{
     margin-bottom: 30px;
-    font-size: 50px;
     display: flex;
-    height: 240px;
+    height: 230px;
     flex-direction: column;   
     position: sticky;
     overflow: auto;
@@ -22,8 +21,9 @@ h1{
 }
 
 .Heading{
-  font-size: 2rem;
+  font-size: 1.3em;
   border: 1px solid black;
+  padding: 10px 40px;
 
 }
 
