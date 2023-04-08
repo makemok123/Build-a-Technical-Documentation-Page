@@ -30,3 +30,9 @@ h1{
 .JS-Heading{
     font-size: 2em;
 }
+
+.code-area{
+    margin: 2rem;
+    font-style: oblique;
+    font-size: 0.8rem;
+}
