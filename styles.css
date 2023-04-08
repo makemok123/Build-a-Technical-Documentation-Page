@@ -5,13 +5,15 @@ body{
 }
 
 .table-of-contents{
-    padding-bottom: 1em;
+    margin-bottom: 30px;
     font-size: 50px;
     display: flex;
-    height: 250px;
+    height: 240px;
     flex-direction: column;   
     position: sticky;
-    overflow: auto;   
+    overflow: auto;
+    border-top: solid;   
+    border-bottom: solid;   
 }
 
 h1{
