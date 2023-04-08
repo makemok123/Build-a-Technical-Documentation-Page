@@ -4,6 +4,23 @@ body{
 
 }
 
+.table-of-contents{
+    padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 3em;
+    align-content:start;
+}
+
+.Main-Heading{
+    font-size: 2.5em;
+}
+
 .Heading{
-  font-size: 2em;    
+  font-size: 1.5em;
+  border:1px solid black;    
+}
+
+.JS-Heading{
+    font-size: 2em;
 }
