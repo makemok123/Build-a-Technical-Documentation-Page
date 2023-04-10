@@ -91,9 +91,10 @@
             <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
             <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
             <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-            <div class="code-area"></div>
-            <p></p>
-            <div class="code-area"></div>
+            <div class="code-area">if (true) { var x = 5; } console.log(x); // 5</div>
+            <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015. </p>
+            <div class="code-area">if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+               <br> not defined</div>
         </article>
         <article id="a8">
             <div class="JS-Heading">Global variables</div>
