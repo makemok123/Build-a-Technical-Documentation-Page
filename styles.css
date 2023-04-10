@@ -36,3 +36,7 @@ h1{
     font-style: oblique;
     font-size: 0.8rem;
 }
+
+ul{
+    margin: 0;
+}

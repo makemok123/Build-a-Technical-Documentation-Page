@@ -8,6 +8,7 @@
     <title>จตุพร เกษมส้ตย์ Build-a-Technical-Documentation-Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <section id="table">
         <h1>JS Documentation</h1>
@@ -54,62 +55,129 @@
             <ul>
                 <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
                 <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript. </li>
+                <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the
+                    main page about JavaScript. </li>
             </ul>
         </article>
         <article id="a3">
             <div class="JS-Heading">JavaScript and Java</div>
-            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
-            <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods. </p>
-            <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed. </p>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript
+                language resembles Java but does not have Java's static typing and strong type checking. JavaScript
+                follows most Java expression syntax, naming conventions and basic control-flow constructs which was the
+                reason why it was renamed from LiveScript to JavaScript.</p>
+            <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime
+                system based on a small number of data types representing numeric, Boolean, and string values.
+                JavaScript has a prototype-based object model instead of the more common class-based object model. The
+                prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual
+                objects. JavaScript also supports functions without any special declarative requirements. Functions can
+                be properties of objects, executing as loosely typed methods. </p>
+            <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables,
+                classes, and methods. You do not have to be concerned with whether methods are public, private, or
+                protected, and you do not have to implement interfaces. Variables, parameters, and function return types
+                are not explicitly typed. </p>
         </article>
         <article id="a4">
             <div class="JS-Heading">Hello world</div>
-            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: </p>
+            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
+                code: </p>
             <div class="code-area">function greetMe(yourName) { alert("Hello " + yourName); }
-                <br> greetMe("World");</div>
+                <br> greetMe("World");
+            </div>
             <p> Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </p>
         </article>
         <article id="a5">
             <div class="JS-Heading">Variables</div>
-            <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
-            <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+            <p>When you declare a variable outside of any function, it is called a global variable, because it is
+                available to any other code in the current document. When you declare a variable within a function, it
+                is called a local variable, because it is available only within that function.</p>
+            <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within
+                a block is local to the function (or global scope) that the block resides within. For example the
+                following code will log 5, because the scope of x is the function (or global context) within which x is
+                declared, not the block, which in this case is an if statement.</p>
             <div class="code-area">if (true) { var x = 5; } console.log(x); // 5</div>
             <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015. </p>
             <div class="code-area">if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-               <br> not defined</div>
+                <br> not defined
+            </div>
         </article>
         <article id="a6">
             <div class="JS-Heading">Declaring variables</div>
-            <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
-            <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+            <p>Global variables are in fact properties of the global object. In web pages the global object is window,
+                so you can set and access global variables using the window.variable syntax.</p>
+            <p>Consequently, you can access global variables declared in one window or frame from another window or
+                frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared
+                in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
         </article>
         <article id="a7">
             <div class="JS-Heading">Variable scope</div>
-            <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+            <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is
+                the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can
+                contain alphabetic, numeric, or underscore characters.</p>
             <div class="code-area">const PI = 3.14;</div>
-            <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
-            <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
-            <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+            <p>A constant cannot change value through assignment or be re-declared while the script is running. It has
+                to be initialized to a value.</p>
+            <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword
+                is omitted, the identifier is assumed to represent a variable.</p>
+            <p>You cannot declare a constant with the same name as a function or variable in the same scope. For
+                example:</p>
             <div class="code-area">if (true) { var x = 5; } console.log(x); // 5</div>
             <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015. </p>
             <div class="code-area">if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-               <br> not defined</div>
+                <br> not defined
+            </div>
         </article>
         <article id="a8">
             <div class="JS-Heading">Global variables</div>
-            <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+            <p>Global variables are in fact properties of the global object. In web pages the global object is window,
+                so you can set and access global variables using the window.variable syntax.
 
             </p>
-            <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber. </p>
+            <p>Consequently, you can access global variables declared in one window or frame from another window or
+                frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared
+                in a document, you can refer to this variable from an iframe as parent.phoneNumber. </p>
         </article>
         <article id="a9">
             <div class="JS-Heading">Constants</div>
-
+            <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is
+                the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can
+                contain alphabetic, numeric, or underscore characters.</p>
+            <div class="code-area">const PI = 3.14;</div>
+            <p>A constant cannot change value through assignment or be re-declared while the script is running. It has
+                to be initialized to a value.</p>
+            <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword
+                is omitted, the identifier is assumed to represent a variable.</p>
+            <p>You cannot declare a constant with the same name as a function or variable in the same scope. For
+                example:</p>
+            <div class="code-area">// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL CAUSE AN ERROR
+                ALSO function f() { const g = 5; var g;
+                <br> //statements }
+            </div>
+            <p>However, object attributes are not protected, so the following statement is executed without problems.
+            </p>
+            <div class="code-area">const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+                <br>"otherValue";
+            </div>
         </article>
         <article id="a10">
             <div class="JS-Heading">Data types</div>
-
+            <p>The latest ECMAScript standard defines seven data types:</p>
+            <ul>
+                <li>Six data types that are primitives:
+                    <ul>
+                        <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is
+                            not the same as Null, NULL, or any other variant. </li>
+                        <li>undefined. A top-level property whose value is undefined.</li>
+                        <li>Number. 42 or 3.14159.</li>
+                        <li>String. "Howdy"</li>
+                        <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                    </ul>
+                </li>
+                <li>and Object</li>
+            </ul>
+            <p>Although these data types are a relatively small amount, they enable you to perform useful functions with
+                your applications. Objects and functions are the other fundamental elements in the language. You can
+                think of objects as named containers for values, and functions as procedures that your application can
+                perform. </p>
         </article>
         <article id="a11">
             <div class="JS-Heading">if...else statement</div>
