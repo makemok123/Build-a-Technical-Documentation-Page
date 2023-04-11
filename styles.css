@@ -1,85 +1,83 @@
-body{
+body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    margin:0;  
+    margin: 0;
 }
 
-.table-of-contents{
+.table-of-contents {
     margin-bottom: 30px;
     margin-left: 0;
     margin-top: 40px;
     padding-top: 0;
     height: 230px;
     flex-direction: column;
-    display: flex;   
+    display: flex;
     position: sticky;
     overflow: auto;
-    border-top: none;   
-    border-bottom: solid;   
+    border-top: none;
+    border-bottom: solid;
 }
 
 @media (min-width: 700px) {
-    body{
+    body {
         display: flex;
-        position: relative; 
+        position: relative;
     }
-    .table-of-contents{
+
+    .table-of-contents {
         width: 400px;
         justify-content: left;
         height: 100%;
         border-bottom: none;
         margin-left: 0;
-        border-top:none ;
-        position: fixed;  
+        border-top: none;
+        position: fixed;
         margin-top: 50px;
     }
-    h1{
-        margin: 10px;
-    }
-    .js-contents{
+    .js-contents {
         border-left: 2px solid black;
         align-items: right;
         width: 70%;
-        margin: 0 0 0 120px;
+        margin: 0 0 0 50px;
         padding: 30px;
     }
-    #Head-table{
-        padding-left: 25px;
+
+    #Head-table {
+        padding-left: 70px;
+        position: static;
     }
+
 }
 
-#Head-table{
+#Head-table {
     box-sizing: border-box;
-    border-top:none;
+    border-top: none;
     text-align: center;
     font-weight: bold;
     font-size: 2em;
-    padding:40px 0 0 0;
+    padding-top: 40px;
     position: sticky;
 }
 
-h1{
-    font-size: 2rem;
-}
 
-.Heading{
-  font-size: 1.3em;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 10px 40px;
+.Heading {
+    font-size: 1.3em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 40px;
 
 }
 
-.JS-Heading{
+.JS-Heading {
     font-size: 2em;
 }
 
-.code-area{
+.code-area {
     margin: 2rem;
     font-style: oblique;
     font-size: 0.8rem;
 }
 
-ul{
+ul {
     margin: 0;
 }
