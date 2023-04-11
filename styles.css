@@ -15,8 +15,16 @@ body{
     border-bottom: solid;   
 }
 
+@media (min-width: 700px) {
+    .table-of-contents{
+        width: 500px;
+        justify-content: left;
+    }
+    h1
+}
+
 h1{
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
 }
 
