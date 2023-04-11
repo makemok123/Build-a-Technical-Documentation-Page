@@ -20,7 +20,14 @@ body{
         width: 500px;
         justify-content: left;
     }
-    h1
+}
+
+@media (min-width: 700px) {
+    h1{
+        text-align:left;
+        border-right: 2px solid black;
+        margin: 0;
+    }
 }
 
 h1{
