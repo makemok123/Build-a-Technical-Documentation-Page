@@ -45,14 +45,18 @@ body{
         padding: 30px;
     }
     #Head-table{
-        position: sticky;
+    position: sticky;
     }
 }
 
 #Head-table{
+    box-sizing: border-box;
     border-top:none;
     text-align: center;
-    font-weight: 200;
+    font-weight: bold;
+    font-size: 2em;
+    padding:10px 0 25px 0;
+    position: sticky;
 }
 
 h1{
