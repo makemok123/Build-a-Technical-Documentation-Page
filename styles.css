@@ -1,14 +1,14 @@
 body{
     font-family: 'Lato', sans-serif;
-    font-size: 16px;    
-
+    font-size: 16px;  
 }
 
 .table-of-contents{
     margin-bottom: 30px;
-    display: flex;
+    margin-left: 0;
     height: 230px;
-    flex-direction: column;   
+    flex-direction: column;
+    display: flex;   
     position: sticky;
     overflow: auto;
     border-top: solid;   
@@ -16,28 +16,40 @@ body{
 }
 
 @media (min-width: 700px) {
+    body{
+        display: flex;
+        position: relative; 
+    }
     .table-of-contents{
-        width: 500px;
+        width: 400px;
         justify-content: left;
+        height: 100%;
+        border-bottom: none;
+        margin-left: 0;
+        position: fixed;  
+    }
+    h1{
+        margin: 10px;
+    }
+    .js-contents{
+        border-left: 2px solid black;
+        align-items: right;
+        width: 70%;
+        margin: 0 0 0 380px;
+        padding: 30px;
     }
 }
 
-@media (min-width: 700px) {
-    h1{
-        text-align:left;
-        border-right: 2px solid black;
-        margin: 0;
-    }
-}
+
 
 h1{
     font-size: 2rem;
-    text-align: center;
 }
 
 .Heading{
   font-size: 1.3em;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 10px 40px;
 
 }
