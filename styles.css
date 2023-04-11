@@ -38,6 +38,9 @@ body{
         margin: 0 0 0 380px;
         padding: 30px;
     }
+    #Head-table{
+        position: sticky;
+    }
 }
 
 
