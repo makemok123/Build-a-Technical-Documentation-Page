@@ -3,7 +3,6 @@ body {
     font-size: 16px;
     margin: 0;
 }
-
 .table-of-contents {
     margin-bottom: 30px;
     margin-left: 0;
@@ -17,38 +16,6 @@ body {
     border-top: none;
     border-bottom: solid;
 }
-
-@media (min-width: 700px) {
-    body {
-        display: flex;
-        position: relative;
-    }
-
-    .table-of-contents {
-        width: 400px;
-        justify-content: left;
-        height: 100%;
-        border-bottom: none;
-        margin-left: 0;
-        border-top: none;
-        position: fixed;
-        margin-top: 50px;
-    }
-    .js-contents {
-        border-left: 2px solid black;
-        align-items: right;
-        width: 70%;
-        margin: 0 0 0 50px;
-        padding: 30px;
-    }
-
-    #Head-table {
-        padding-left: 70px;
-        position: static;
-    }
-
-}
-
 #Head-table {
     box-sizing: border-box;
     border-top: none;
@@ -58,8 +25,6 @@ body {
     padding-top: 40px;
     position: sticky;
 }
-
-
 .Heading {
     font-size: 1.3em;
     border-top: 1px solid black;
@@ -67,17 +32,58 @@ body {
     padding: 10px 40px;
 
 }
-
+.js-contents {
+    margin: 30px;
+}
 .JS-Heading {
     font-size: 2em;
 }
-
 .code-area {
     margin: 2rem;
     font-style: oblique;
-    font-size: 0.8rem;
+    font-size: 85%;
+    background-color: #f5f5f5 ;
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
 }
-
 ul {
     margin: 0;
+}
+li{
+    margin: 0.8rem;
+}
+
+@media (min-width: 700px) {
+    body {
+        display: flex;
+        position: relative;
+    }
+    .table-of-contents {
+        width: 400px;
+        justify-content: left;
+        height: 100%;
+        margin-left: 0;
+        border-top: none;
+        border-bottom: none;
+        border-right: 2px solid black;
+        position: fixed;
+        margin-top: 90px;
+    }
+    .js-contents {
+        align-items: right;
+        width: 70%;
+        margin: 0 0 0 400px;
+        padding: 30px;
+    }
+    #Head-table {
+        padding:30px 49px 24px 70px;
+        position: fixed;
+        border-right: 2px solid black;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    .bottom-none{
+        border-bottom: none;
+    }
 }
