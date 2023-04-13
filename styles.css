@@ -54,7 +54,7 @@ li{
 }
 a{
     text-decoration-line:none;
-    color: inherit;
+    color: black;
 }
 
 @media (min-width: 700px) {
