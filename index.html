@@ -88,7 +88,6 @@
 
         <section class="main-section" id="Variables">
             <header>Variables</header>
-<<<<<<< HEAD
             <p>You use variables as symbolic names for values in your application. The names of variables, called
                 identifiers, conform to certain rules. </p>
             <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent
@@ -97,17 +96,36 @@
             <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode
                 escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and
                 _name. </p>
-=======
->>>>>>> cda68ab5cfb7c5f2bd3107e3bc8dcc7b77f6548a
 
         </section>
-        <section class="main-section" id="4">
-            <header>4</header>
+        <section class="main-section" id="Declaring variables">
+            <header>Declaring variables</header>
+            <p>You can declare a variable in three ways:</p>
+            <p> With the keyword var. For example,</p>
+            <code>var x = 42.</code>
+            <p> This syntax can be used to declare both local and global variables.</p>
+            <p> By simply assigning it a value. For example,</p>
+            <code>x = 42.</code>
+            <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this
+                variant.</p>
+            <p> With the keyword let. For example,</p>
+            <code>let y = 13.</code>
+            <p>This syntax can be used to declare a block scope local variable. See Variable scope below. </p>
 
         </section>
-        <section class="main-section" id="4">
-            <header>4</header>
-
+        <section class="main-section" id="Variable scope">
+            <header>Variable scope</header>
+            <p>When you declare a variable outside of any function, it is called a global variable, because it is
+            available to any other code in the current document. When you declare a variable within a function, it
+            is called a local variable, because it is available only within that function.</p>
+        <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within
+            a block is local to the function (or global scope) that the block resides within. For example the
+            following code will log 5, because the scope of x is the function (or global context) within which x is
+            declared, not the block, which in this case is an if statement.</p>
+        <div class="code-area">if (true) { var x = 5; } console.log(x); // 5</div>
+        <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015. </p>
+        <div class="code-area">if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+            <br> not defined
         </section>
         <section class="main-section" id="4">
             <header>4</header>
