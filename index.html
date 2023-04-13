@@ -87,7 +87,9 @@
         </article>
         <article id="a5">
             <div class="JS-Heading">Variables</div>
-
+            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. </p>
+            <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase). </p>
+            <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. </p>
         </article>
         <article id="a6">
             <div class="JS-Heading">Declaring variables</div>
@@ -106,21 +108,6 @@
                 a block is local to the function (or global scope) that the block resides within. For example the
                 following code will log 5, because the scope of x is the function (or global context) within which x is
                 declared, not the block, which in this case is an if statement.</p>
-            <div class="code-area">if (true) { var x = 5; } console.log(x); // 5</div>
-            <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015. </p>
-            <div class="code-area">if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-                <br> not defined
-            </div>
-            <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is
-                the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can
-                contain alphabetic, numeric, or underscore characters.</p>
-            <div class="code-area">const PI = 3.14;</div>
-            <p>A constant cannot change value through assignment or be re-declared while the script is running. It has
-                to be initialized to a value.</p>
-            <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword
-                is omitted, the identifier is assumed to represent a variable.</p>
-            <p>You cannot declare a constant with the same name as a function or variable in the same scope. For
-                example:</p>
             <div class="code-area">if (true) { var x = 5; } console.log(x); // 5</div>
             <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015. </p>
             <div class="code-area">if (true) { let y = 5; } console.log(y); // ReferenceError: y is
