@@ -52,6 +52,10 @@ ul {
 li{
     margin: 0.8rem;
 }
+a{
+    text-decoration-line:none;
+    color: inherit;
+}
 
 @media (min-width: 700px) {
     body {
