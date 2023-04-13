@@ -93,11 +93,16 @@
         </article>
         <article id="a6">
             <div class="JS-Heading">Declaring variables</div>
-            <p>Global variables are in fact properties of the global object. In web pages the global object is window,
-                so you can set and access global variables using the window.variable syntax.</p>
-            <p>Consequently, you can access global variables declared in one window or frame from another window or
-                frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared
-                in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+            <p>You can declare a variable in three ways:</p>
+            <p> With the keyword var. For example,</p>
+            <div class="code-area">var x = 42.</div>
+            <p> This syntax can be used to declare both local and global variables.</p>
+            <p> By simply assigning it a value. For example,</p>
+            <div class="code-area">x = 42.</div>
+            <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+            <p> With the keyword let. For example,</p>
+            <div class="code-area">let y = 13.</div>
+            <p>This syntax can be used to declare a block scope local variable. See Variable scope below. </p>
         </article>
         <article id="a7">
             <div class="JS-Heading">Variable scope</div>
