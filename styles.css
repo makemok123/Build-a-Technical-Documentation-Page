@@ -25,20 +25,25 @@
     padding-top: 40px;
     position: sticky;
 }
-.Heading {
+.nav-link {
     font-size: 1.3em;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 10px 40px;
 
 }
-.js-contents {
+.main-section {
     margin: 30px;
 }
-.JS-Heading {
+header {
     font-size: 2em;
 }
-.code-area {
+
+#main-header{
+    padding: 0.1em 1em 1em 5.6em;
+}
+
+code{
     margin: 1rem;
     font-style: oblique;
     font-size: 85%;
@@ -73,7 +78,7 @@ a{
         position: fixed;
         margin-top: 90px;
     }
-    .js-contents {
+    .main-section {
         align-items: right;
         width: 70%;
         margin: 0 0 0 400px;
