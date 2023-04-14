@@ -1,3 +1,5 @@
+** start of undefined **
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -271,3 +273,122 @@
 </body>
 
 </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+    margin: 0;
+    padding: 0;  
+}
+
+#main-doc{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+#nav-item {
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    height: 230px;
+    overflow: auto;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    border-top: none;
+    border-bottom: solid;
+}
+#main-section {
+    box-sizing: border-box;
+    border-top: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 40px;
+    position: sticky;
+}
+.nav-link {
+    font-size: 1.3em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 40px;
+    
+}
+.main-section {
+    margin: 30px;
+}
+header {
+    font-size: 2em;
+}
+
+#main-header{
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+code{
+    display: block;
+    margin: 0.1rem;
+    font-style: oblique;
+    font-size: 85%;
+    background-color: #f5f5f5 ;
+    border-radius: 3px;
+    padding: 2em 0.9em;
+}
+ul {
+    margin: 0;
+}
+li{
+    margin: 0.8rem;
+}
+#nav-item > a{
+    text-decoration-line:none;
+    color: black;
+}
+
+@media (min-width: 700px) {
+    #main-doc {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+    }
+    #nav-item {
+        width: 400px;
+        justify-content: left;
+        height: 100%;
+        margin-left: 0;
+        border-top: none;
+        border-bottom: none;
+        border-right: 2px solid black;
+        position: fixed;
+        margin-top: 5rem;
+        }
+    .main-section {
+        align-items: right;
+        width: 70%;
+        margin: 0 0 0 400px;
+        padding: 30px;
+    }
+    #main-header {
+        display: block;
+        width: 400px;
+        position: fixed;
+        margin: 0;
+        border-right: 2px solid black;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    #bottom-none{
+        border-bottom: none;
+    }
+}
+
+** end of undefined **
+
